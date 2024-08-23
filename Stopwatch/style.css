@@ -47,10 +47,14 @@ span#milliseconds{
     background-color: #000;
     color: #fff;
     padding: 8px 16px;
-    border: 1px solid #333;;
-    border-radius: 8px;
+    border: 1px solid #333;
+    border-radius: 13px;
     margin-right: 1rem;
     font-size: 18px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
 }
 .main button:hover{
     background-color: #333;
@@ -67,11 +71,5 @@ span#milliseconds{
 .footer i{
     margin: 0.5rem;
 }
-.footer .social{
-    text-align: center;
-}
-.social i{
-    font-size: 24px;
-    color: #fff;
-}
+
 /**
