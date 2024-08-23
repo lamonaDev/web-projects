@@ -23,13 +23,13 @@
     btnStart.onclick = function() {
         clearInterval(interval);
         interval = setInterval(start, 10);
-     } 
+      } 
 
-     btnStop.onclick = function() {
+      btnStop.onclick = function() {
         clearInterval(interval);
-     }
+      }
 
-     btnReset.onclick = function() {
+      btnReset.onclick = function() {
         clearInterval(interval);
         milliseconds = 0;
         seconds = 0;
@@ -39,9 +39,9 @@
         sec.innerHTML = ":" + seconds + "0";
         min.innerHTML = ":" + minutes + "0";
         hr.innerHTML = hour + "0";
-     } 
+      } 
     
-     function start() {
+      function start() {
         milliseconds++; 
         
         if(milliseconds < 9){
