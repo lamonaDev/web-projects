@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>GPA-APP</title>
+</head>
+<body>
+    <h1 class="title" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-anchor="#example-anchor">Calculate GPA</h1>
+    <main class="main" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-anchor="#example-anchor">
+        <form action="" class="main-form" id="main-form">
+            <label for="name" class="name">Name</label> <br>
+                <input type="text" class="name-input" id="name-input" placeholder="Enter Your Name" required> <br>
+            <label for="course-one-credit" class="course-one-label">Course One Credit</label> <br>
+            <input type="number" id="course-one-credit" class="course-one-credit" min="0" max="4" placeholder="0H~4H" required> <br>
+            
+            <label for="course-two-credit" class="course-two-label">Course Two Credit</label> <br>
+            <input type="number" id="course-two-credit" class="course-two-credit" min="0" max="4" placeholder="0H~4H" required> <br>
+            
+            <label for="course-three-credit" class="course-three-label">Course Three Credit</label> <br>
+            <input type="number" id="course-three-credit" class="course-three-credit" min="0" max="4" placeholder="0H~4H" required> <br>
+            
+            <label for="course-four-credit" class="course-four-label">Course Four Credit</label> <br>
+            <input type="number" id="course-four-credit" class="course-four-credit" min="0" max="4" placeholder="0H~4H" required> <br>
+            
+            <label for="course-one-credit" class="course-five-label">Course Five Credit</label> <br>
+            <input type="number" id="course-five-credit" class="course-five-credit" min="0" max="4" placeholder="0H~4H" required> <br><br>
+            <button type="submit" class="submit-gpa" id="submit-gpa">Calculate GPA</button>
+            <button type="reset" id="reset-button">Reset</button>
+            </form>
+        <div class="calculated-gpa" id="calculated-gpa" hide="hidden" data-aos="fade-down">
+            <p class="student-name">Name: <span class="student-name-gpa"></span></p>
+            <p class="totafl-credit">Your Total Credit: <span class="total-credit-number"></span></p>
+            <p class="total-grade-points"> Your Total Grade Points: <span class="total-grade-points-number"></span></p>
+            <p class="grade-point-average">Your Grade Point Averrage: <span class="grade-point-average-number"></span></p>
+        </div>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
