@@ -1,0 +1,114 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #151515;
+    /* Dark background */
+    color: #fff;
+    /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #444;
+    /* Darker background for main container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styles */
+
+.header {
+    /*background-color: #000000;
+    *//*Darkerbackgroundforheader*/padding: 10px;
+    border-bottom: 2px solid #333;
+    box-shadow: 0px 0px 20px#ffffff61;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Button Styles */
+
+.buttonContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.passwordGenerator,
+.passwordClear {
+    background-color: #666;
+    /* Darker background for buttons */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.passwordGenerator:hover,
+.passwordClear:hover {
+    background-color: #777;
+    /* Darker background on hover */
+}
+
+/* Password Container Styles */
+
+.passwordContainer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #444;
+    /* Darker background for password container */
+    border-radius: 10px;
+}
+
+.passwordText {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    main {
+        max-width: 300px;
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+    }
+
+    .passwordGenerator,
+    .passwordClear {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

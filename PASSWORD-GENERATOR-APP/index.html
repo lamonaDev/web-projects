@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD GENERATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <main data-aos="fade-up" data-aos-duration="1100">
+        <header class="header">
+            <h1 class="title" id="title">PASSWORD GENERATOR</h1>
+        </header>
+        <div class="buttonContainer" id="buttonContainer">
+            <button class="passwordGenerator" type="button">Generate Password</button>
+            <button class="passwordClear" type="button">Clear</button>
+        </div>
+        <div class="passwordContainer" id="passwordContainer">
+            <p class="passwordText" id="passwordText">text</p>
+        </div>
+    </main>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
