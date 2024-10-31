@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Income Sheet Statement</title>
+</head>
+<body>
+    <form action="" class="add-rev">
+        <label for="name" class="add-rev-title">REVENUE NAME:</label>
+        <input type="text" id="name-rev" name="name-rev" placeholder="ENTER REVENUE NAME" required> <br>
+        <label for="amount">REVENUE AMOUNT:</label>
+        <input type="number" class="rev-amount" id="rev-amount" placeholder="REVENUE AMOUNT" required> <br>
+        <button type="submit" class="add-rev-button">ADD REV</button>
+        <button type="reset" class="rev-clear-button">CLEAR</button>
+    </form>
+    <form action="" class="add-exp">
+        <label for="name">EXPENSE NAME:</label>
+        <input type="text" class="name-exp" id="name-exp" name="name-exp" placeholder="ENTER EXPENSE NAME" required> <br>
+        <label for="amount">EXPENSE AMOUNT:</label>
+        <input class="exp-amount" id="exp-amount" type="number" placeholder="EXPENSE AMOUNT" required> <br>
+        <button type="submit" class="add-exp-button">ADD EXP</button>
+        <button type="reset" class="exp-clear-button">CLEAR</button>
+    </form>
+
+    <div class="title"><hr>INCOME STATEMENT<hr></div>
+    <hr class="init-line">
+    <div class="reveneus-container">
+        <h3 class="reveneus-container-title">REVENEUS:</h3>
+        <p class="rev-1-name">INIT</p>
+        <p class="rev-1-amount">3000$</p>
+    </div>
+    <div class="expenses-container">
+        <h3 class="expenses-container-title">EXPENSES:</h3>
+        <p class="exp-1-name">INIT</p>
+        <p class="exp-1-amount">3000$</p>
+    </div>
+    <hr class="end-line">
+    <p class="total-rev">TOTAL REVENEUS: 0</p>
+    <p class="total-exp">TOTAL EXPENSES: 1000</p>
+    <p class="net">NET LOSS: 10000</p>
+    <script src="./js/addRevenus.js" type="module"></script>
+    <script src="./js/addExpenses.js" type="module"></script>
+</body>
+</html>
