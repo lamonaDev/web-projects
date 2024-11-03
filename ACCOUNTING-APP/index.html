@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./style/main.css"> -->
+    <link rel="stylesheet" href="./style/res.css">
+    <title>accounting applicaiton</title>
+</head>
+<body>
+    <p class="title">IMCOME STATEMENT</p><br>
+    <hr style="margin-top: 30px;">
+    <div class="add-rev-container">
+        <label for="rev-name">Revenue Name:</label><br>
+        <input class="add-rev-name" type="text" placeholder="Enter Revenue Name"><br>
+        <input class="add-rev-value" type="number" placeholder="Enter Revenue Value"><br>
+        <button type="button" class="add-rev-button">Add</button>
+        <button type="button" class="clear-rev-button">Clear</button>
+    </div> <br>
+    <div class="add-exp-container">
+        <label for="exp-name">Expense Name:</label><br>
+        <input class="add-exp-name" type="text" placeholder="Enter Expense Name"><br>
+        <input class="add-exp-value" type="number" placeholder="Enter Expense Value"><br>
+        <button type="button" class="add-exp-button">Add</button>
+        <button type="button" class="clear-exp-button">Clear</button>
+    </div> <br>
+        <p style="font-size: 20px;" class="rev-haeder">REVENEUS:</p> 
+        <p style="font-size: 20px;" class="exp-haeder">EXPENSES:</p>
+    <div class="rev-container">
+        <div class="rev-added">
+            <p class="rev-added-name">test</p>
+            <p class="rev-added-value">1000$</p>
+        </div>
+    </div>
+    <div class="exp-container">
+        <div class="exp-added">
+            <p class="exp-added-name">test</p>
+            <p class="exp-added-value">1000$</p>
+        </div>
+    </div>
+    <hr>
+    <p class="total-revenues">Total Reveneus: <span class="total-revenues-value"></span></p>
+    <p class="total-expenses">Total Expenses: <span class="total-expenses-value"></span></p>
+    <p class="net">NET INCOME/LOSS: <span class="net-value"></span></p>
+    <script src="./js/addRevenus.js" type="module"></script>
+    <script src="./js/addExpenses.js" type="module"></script>
+    <script src="./js/net.js" type="module"></script>
+</body>
+</html>
