@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>ToDoList</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1 data-aos="zoom-out-down">TO-DO LIST</h1>
+        <input data-aos="zoom-out-down" type="text" id="taskInput" placeholder="Add a Task">
+        <button data-aos="zoom-out-down" id="addTask">Add</button>
+        <ul id="taskList">
+
+        </ul>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
